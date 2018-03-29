@@ -13,24 +13,28 @@ namespace chooser
             serviceItemPrice = price;
         }
 
-        public static string getItemTitle() {
+        public string getItemTitle() {
             return serviceItemTitle;
         }
 
-        public static double getItemPrice() {
+        public double getItemPrice() {
             return serviceItemPrice;
         }
 
-        public static void setItemPrice(double newPrice) {
+        public void setItemPrice(double newPrice) {
             serviceItemPrice = newPrice;
         }
 
-        public static void setItemTitle(string newTitle) {
+        public void setItemTitle(string newTitle) {
             serviceItemTitle = newTitle;
         }
 
         public override string ToString(){
             return "The \"" + serviceItemTitle + "\" costs $" + serviceItemPrice + "." ;
         }  
+
+        public string toShortString() {
+            return "" + serviceItemTitle + ":" + serviceItemPrice;
+        }
     }
 }

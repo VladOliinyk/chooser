@@ -7,9 +7,11 @@ namespace chooser
         static void Main(string[] args)
         {
             start();
+            test();
         }
 
-        static void start() {
+        static void start()
+        {
             // TODO:
             // greetings();
             // showServices();
@@ -18,21 +20,21 @@ namespace chooser
             //    askForService();
             // }
             // showTotalTable(calculateTotalTable());
-        
+        }
 
-        SingleServiceItem obja = new SingleServiceItem("one", 1.0);
-        SingleServiceItem objb = new SingleServiceItem("two", 2.0);
-        SingleServiceItem objc = new SingleServiceItem("three", 3);
+        static void test()
+        {
+            // creating simple array of singl service items
+            SingleServiceItem[] array = {
+                new SingleServiceItem("one", 1.0),
+                new SingleServiceItem("two", 2.0),
+                new SingleServiceItem("three", 3)};
 
-        Console.WriteLine("a " + obja.getItemPrice());
-        Console.WriteLine("b " + objb.getItemPrice());
-        Console.WriteLine("c " + objc.getItemPrice());
+            // creating own service
+            SingleService myService = new SingleService("Custom Name", array);
 
-        SingleServiceItem[] array = {obja, objc, objb};
-
-        SingleService myService = new SingleService("name", array);
-
-        Console.WriteLine(myService);
+            //ceck out cool output
+            Console.WriteLine(myService);
         }
     }
 }

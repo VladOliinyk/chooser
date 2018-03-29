@@ -36,7 +36,7 @@ namespace chooser
 
             for (int i=0; i < subServices.Length; i++) {
 
-                string shortStr = subServices[i].toShortString();
+                string shortStr = subServices[i].ToString();
                 str += shortStr;
                 if (i != subServices.Length - 1) {
                     str+=",";

@@ -1,0 +1,10 @@
+D:\Programming\slupsk\Csharp\chooser\bin\release\netcoreapp2.0\chooser.deps.json
+D:\Programming\slupsk\Csharp\chooser\bin\release\netcoreapp2.0\chooser.runtimeconfig.json
+D:\Programming\slupsk\Csharp\chooser\bin\release\netcoreapp2.0\chooser.runtimeconfig.dev.json
+D:\Programming\slupsk\Csharp\chooser\bin\release\netcoreapp2.0\chooser.dll
+D:\Programming\slupsk\Csharp\chooser\bin\release\netcoreapp2.0\chooser.pdb
+D:\Programming\slupsk\Csharp\chooser\obj\release\netcoreapp2.0\chooser.csproj.CoreCompileInputs.cache
+D:\Programming\slupsk\Csharp\chooser\obj\release\netcoreapp2.0\chooser.AssemblyInfoInputs.cache
+D:\Programming\slupsk\Csharp\chooser\obj\release\netcoreapp2.0\chooser.AssemblyInfo.cs
+D:\Programming\slupsk\Csharp\chooser\obj\release\netcoreapp2.0\chooser.dll
+D:\Programming\slupsk\Csharp\chooser\obj\release\netcoreapp2.0\chooser.pdb

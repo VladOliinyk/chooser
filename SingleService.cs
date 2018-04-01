@@ -2,28 +2,53 @@ using System;
 
 namespace chooser
 {
-    class SingleService 
+    class SingleService
     {
-        private static string serviceTitle = "StockService";
-        private static SingleServiceItem[] subServices = {};
-        
-        public SingleService() {
+        private string serviceTitle = "StockService";
+        private SingleServiceItem[] subServices = { };
 
+        private int selectedOption = -1;
+
+        public SingleService(SingleService other)//Deep copy constructor
+        {
+            this.serviceTitle = other.serviceTitle;
+            this.subServices = other.subServices;
+            this.selectedOption = other.selectedOption;
         }
-        public SingleService(string title, SingleServiceItem[] itemArray) {
+
+        public SingleService(string title, SingleServiceItem[] itemArray)
+        {
             serviceTitle = title;
             subServices = itemArray;
         }
 
-        public string getServiceTitle() {
+        public void setOption(int option)
+        {
+            selectedOption = option;
+        }
+
+        public int getOption()
+        {
+            return selectedOption;
+        }
+
+        public string getServiceTitle()
+        {
             return serviceTitle;
         }
 
-        public void setServiceTitle(string newTitle) {
+        public SingleServiceItem[] getServiceItems()
+        {
+            return subServices;
+        }
+
+        public void setServiceTitle(string newTitle)
+        {
             serviceTitle = newTitle;
         }
 
-        public void addItem(SingleServiceItem item) {
+        public void addItem(SingleServiceItem item)
+        {
             int newSize = subServices.Length + 1;
             SingleServiceItem[] newSubServices = new SingleServiceItem[subServices.Length + 1];
 
@@ -31,23 +56,30 @@ namespace chooser
 
 
 
-        public override string ToString(){
-            string str =  "The \"" + serviceTitle + "\" has such subservices: [";
+        public override string ToString()
+        {
+            string str = "The \"" + serviceTitle + "\" has such subservices: [";
 
-            for (int i=0; i < subServices.Length; i++) {
+            for (int i = 0; i < subServices.Length; i++)
+            {
 
                 string shortStr = subServices[i].ToString();
                 str += shortStr;
-                if (i != subServices.Length - 1) {
-                    str+=",";
+                if (i != subServices.Length - 1)
+                {
+                    str += ",";
                 }
 
             }
 
-            str+= "].";
+            str += "].";
 
             return str;
-        }  
+        }
+
+
+
+
 
     }
 }
